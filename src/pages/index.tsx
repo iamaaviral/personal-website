@@ -20,7 +20,11 @@ import {
   faSass,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCode, faTeletype } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faLaptopCode,
+  faTeletype,
+} from "@fortawesome/free-solid-svg-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,7 +58,7 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/iamaaviral/"
                 target="_blank"
-                className={styles.socialWrapper}
+                className={`${styles.socialWrapper} ${styles.linkedin}`}
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
@@ -64,7 +68,7 @@ export default function Home() {
               <Link
                 href="https://www.instagram.com/iamaaviral/"
                 target="_blank"
-                className={styles.socialWrapper}
+                className={`${styles.socialWrapper} ${styles.instagram}`}
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
@@ -74,7 +78,7 @@ export default function Home() {
               <Link
                 href="https://www.facebook.com/aviral.srivastava3/"
                 target="_blank"
-                className={styles.socialWrapper}
+                className={`${styles.socialWrapper} ${styles.facebook}`}
               >
                 <FontAwesomeIcon
                   icon={faFacebook}
@@ -84,7 +88,7 @@ export default function Home() {
               <Link
                 href="https://www.twitter.com/iamaaviral/"
                 target="_blank"
-                className={styles.socialWrapper}
+                className={`${styles.socialWrapper} ${styles.twitter}`}
               >
                 <FontAwesomeIcon
                   icon={faTwitter}
@@ -94,7 +98,7 @@ export default function Home() {
               <Link
                 href="https://www.github.com/iamaaviral/"
                 target="_blank"
-                className={styles.socialWrapper}
+                className={`${styles.socialWrapper} ${styles.github}`}
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -110,11 +114,10 @@ export default function Home() {
             <div className={`${styles.container} ${styles.clearfix}`}>
               <div className={styles.homepageTitle}>
                 <div className={styles.profileImage}>
-                  <Image
+                  <img
                     src="/image.png"
                     alt="profile-image"
-                    height={721}
-                    width={600}
+                    className={styles.profileImageDimension}
                   />
                 </div>
 
@@ -124,6 +127,7 @@ export default function Home() {
                 <h2 className={styles.profileDesc}>
                   {" "}
                   A front-end Web Developer{" "}
+                  <FontAwesomeIcon icon={faLaptopCode} />
                 </h2>
               </div>
               <div className={`${styles.triangle} ${styles.toLeft}`}></div>
@@ -148,7 +152,7 @@ export default function Home() {
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faHtml5}
-                        className={`${styles.socialIcon} ${styles.html5}`}
+                        className={`${styles.skillIcon} ${styles.html5}`}
                         title="HTML5"
                       />
                     </div>
@@ -156,7 +160,7 @@ export default function Home() {
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faCss3}
-                        className={`${styles.socialIcon} ${styles.css3}`}
+                        className={`${styles.skillIcon} ${styles.css3}`}
                         title="CSS3"
                       />
                     </div>
@@ -164,36 +168,36 @@ export default function Home() {
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faJs}
-                        className={`${styles.socialIcon} ${styles.js}`}
+                        className={`${styles.skillIcon} ${styles.js}`}
                         title="JAVASCRIPT"
                       />
                     </div>
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faReact}
-                        className={`${styles.socialIcon} ${styles.react}`}
+                        className={`${styles.skillIcon} ${styles.react}`}
                         title="REACT"
                       />
                     </div>
-   
+
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faGitAlt}
-                        className={`${styles.socialIcon} ${styles.git}`}
+                        className={`${styles.skillIcon} ${styles.git}`}
                         title="GIT"
                       />
                     </div>
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faGithub}
-                        className={`${styles.socialIcon} ${styles.gitHub}`}
+                        className={`${styles.skillIcon} ${styles.gitHub}`}
                         title="GITHUB"
                       />
                     </div>
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faSass}
-                        className={`${styles.socialIcon} ${styles.sass}`}
+                        className={`${styles.skillIcon} ${styles.sass}`}
                         title="SASS"
                       />
                     </div>
@@ -201,7 +205,7 @@ export default function Home() {
                     <div className={styles.iconBlock}>
                       <FontAwesomeIcon
                         icon={faBootstrap}
-                        className={`${styles.socialIcon} ${styles.bootstrap}`}
+                        className={`${styles.skillIcon} ${styles.bootstrap}`}
                         title="BOOTSTRAP"
                       />
                     </div>
