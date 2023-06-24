@@ -19,30 +19,20 @@ const Navbar = () => {
       <nav className={`${styles.container} ${styles.clearfix}`}>
         <ul className={`${styles.menu} ${styles.pullLeft}`}>
           <li>
-            <Link href="/">
-              {" "}
-              <a
-                className={`${styles.routeLink} ${
+            <Link href="/"  className={`${styles.routeLink} ${
                   router.pathname === "/" ? styles.active : ""
-                }`}
-              >
+                }`}>
+              {" "}
                 Home
-              </a>
             </Link>
           </li>
-          {/* <li>
-            <Link href="/blog"> <a className={`${styles.routeLink} ${router.pathname === '/projects' ? styles.active : ''}`}>Blog</a></Link>
-          </li> */}
           <li>
-            <Link href="/projects">
-              {" "}
-              <a
-                className={`${styles.routeLink} ${
+            <Link href="/projects"  className={`${styles.routeLink} ${
                   router.pathname === "/projects" ? styles.active : ""
-                }`}
-              >
+                }`}>
+              {" "}
+
                 Projects
-              </a>
             </Link>
           </li>
         </ul>

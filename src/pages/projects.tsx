@@ -79,9 +79,9 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <h3 className={styles.projectName}>
-                <a target="_blank" className={styles.projectLink}>
+                <p className={styles.projectLink}>
                   Minesweeper
-                </a>
+                </p>
               </h3>
             <p>
             Minesweeper is a logic puzzle  which features a grid of clickable squares, with hidden &quot;mines`&quot; scattered throughout the board.
@@ -94,9 +94,9 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <h3 className={styles.projectName}>
-                <a target="_blank" className={styles.projectLink}>
+                <p className={styles.projectLink}>
                   Page Builder
-                </a>
+                </p>
               </h3>
             <p>
               A simple drag&drop page with basic customizable elements to create your form.
@@ -109,9 +109,9 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <h3 className={styles.projectName}>
-                <a target="_blank" className={styles.projectLink}>
+                <p className={styles.projectLink}>
                   Play my music
-                </a>
+                </p>
               </h3>
             <p>
               A simple music player with audio controls and mini playlist.

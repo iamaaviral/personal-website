@@ -273,12 +273,13 @@
   padding: 0 0 10px 0;
 }
 
-.projectLink {
+.projectLink, .card .projectLink {
   font-size: 35px;
   text-decoration: none;
   color: #04b5ff;
   cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
+  opacity: 1;
 }
 
 .profileDesc {

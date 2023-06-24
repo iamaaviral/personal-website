@@ -28,6 +28,7 @@ const Main = () => {
               <div className={styles.profileImage}>
                 <Image
                   src="/image.png"
+                  priority={true}
                   alt="profile-image"
                   height={700}
                   width={500}
