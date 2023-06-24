@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "./navbar";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Footer from "./footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ const Projects = () => {
       <main className={`${styles.main} ${inter.className}`}>
         <Navbar />
         <h1>Hello</h1>
+        <Footer />
       </main>
     </>
   );

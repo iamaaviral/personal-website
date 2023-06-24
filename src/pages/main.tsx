@@ -13,6 +13,9 @@ import {
     faLaptopCode,
   } from "@fortawesome/free-solid-svg-icons";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  import { Kanit } from "next/font/google";
+
+  const lato = Kanit({ weight: "600", subsets: ["latin"] });
 
 
 const Main = () => {
@@ -29,7 +32,7 @@ const Main = () => {
                 />
               </div>
 
-              <h1 className={styles.profileName}>
+              <h1 className={`${styles.profileName} ${lato.className}`}>
                 Aviral <span>Srivastava</span>
               </h1>
               <h2 className={styles.profileDesc}>
@@ -54,7 +57,7 @@ const Main = () => {
                     development lifecycle working on areas ranging all the way
                     from data modelling to UI design and release management
                   </p>
-                  <hr className={styles.hr} />
+                  <hr className={styles.hr} style={{width: "100px"}}/>
                 </div>
                 <div className={styles.techStack}>
                   <div className={styles.iconBlock}>

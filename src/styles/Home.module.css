@@ -1,5 +1,6 @@
 .main {
   min-height: 100vh;
+  padding: 15px;
 }
 
 .header {
@@ -30,7 +31,7 @@
   text-decoration: none;
   font-weight: bold;
   border-bottom: none;
-  transition: border-bottom 0.5s ease-in;
+  transition: border-bottom 0.3s ease-in;
 }
 
 .routeLink.active {
@@ -38,7 +39,8 @@
 }
 
 .routeLink:hover {
-  border-bottom: 1px solid rgb(221, 221, 221);
+  opacity: 0.6;
+  border-bottom: 1px solid rgb(221, 221, 221, 0.6);
 }
 
 .headerTools {
@@ -120,7 +122,6 @@
 .profileName span {
   display: block;
   color: rgba(252, 252, 252, 0.295);
-  margin-top: 20px;
 }
 
 .profileDesc {
@@ -172,7 +173,6 @@
 }
 
 .hr {
-  width: 100px;
   margin: 20px auto;
   border: 1px solid #d4d5d6
 }
@@ -198,10 +198,10 @@
   padding: 10px;
 }
 
-.iconBlock:nth-child(6) {
-  grid-column-start: 2; /* Second item starts at 2nd column */
-  grid-column-end: 3; /* Second item ends at 3rd column */
-}
+/* .iconBlock:nth-child(6) {
+  grid-column-start: 2;
+  grid-column-end: 3; 
+} */
 
 .skillIcon {
   -moz-osx-font-smoothing: grayscale;
@@ -250,11 +250,11 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+/* @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
@@ -266,13 +266,21 @@
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+
+.footerInfo {
+  padding: 15px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  padding: 15px;
+  font-size: 14px;
+}
+
+.contact a {
+  margin-left: 8px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -324,6 +332,16 @@
 .profileDesc {
   text-align: center;
   font-size: 15px;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hr {
+  width: 100%
 }
 
 }
