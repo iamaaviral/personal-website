@@ -1,7 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faEnvelope, faGlobe, faLocation, faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faMapPin, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
@@ -12,11 +12,11 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faEnvelope} className={styles.socialIcon} />
                     <a href="mailto:srivastavaaviral1@gmail.com">srivastavaaviral1@gmail.com</a>
                     <br />
-                    <FontAwesomeIcon icon={faGlobe} className={styles.socialIcon} />
+                    <FontAwesomeIcon icon={faPhone} className={styles.socialIcon} />
                     <a>+91-7073865049</a>
                 </div>
                 <div className={styles.location}>
-                <FontAwesomeIcon icon={faMapPin}/> Currently located in <b>Bengaluru, India</b>
+                <FontAwesomeIcon icon={faMapPin}/>  <b>Bengaluru, India</b>
                 </div>
             </div>
         </footer>

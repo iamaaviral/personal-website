@@ -14,6 +14,7 @@ import {
   } from "@fortawesome/free-solid-svg-icons";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
   import { Kanit } from "next/font/google";
+import Image from "next/image";
 
   const lato = Kanit({ weight: "600", subsets: ["latin"] });
 
@@ -25,10 +26,11 @@ const Main = () => {
           <div className={`${styles.container} ${styles.clearfix}`}>
             <div className={styles.homepageTitle}>
               <div className={styles.profileImage}>
-                <img
+                <Image
                   src="/image.png"
                   alt="profile-image"
-                  className={styles.profileImageDimension}
+                  height={700}
+                  width={500}
                 />
               </div>
 
