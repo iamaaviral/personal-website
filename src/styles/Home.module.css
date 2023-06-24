@@ -24,17 +24,21 @@
   float: left;
 }
 
-.menu li a {
+.routeLink{
   display: block;
   padding: 15px 15px;
   text-decoration: none;
   font-weight: bold;
   border-bottom: none;
-  transition: border-bottom 0.5s ease;
+  transition: border-bottom 0.5s ease-in;
 }
 
-.menu li a:hover {
-  border-bottom: 2px solid rgb(221, 221, 221);
+.routeLink.active {
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.routeLink:hover {
+  border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 .headerTools {
