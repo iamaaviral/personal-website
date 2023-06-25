@@ -392,6 +392,10 @@
     display: none;
   }
 
+  .homepageTitle {
+    padding: 0;
+  }
+
   .profileImage {
     position: relative;
     width: 50%;
