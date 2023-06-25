@@ -71,7 +71,7 @@ const Projects = () => {
           <h2>Here are some other fun personal projects <FontAwesomeIcon className={styles.projectIcons} icon={faLaptop}/></h2>
           <hr className={styles.hr} />
 
-          <div className={styles.grid}>
+          <div className={styles.projectsGrid}>
           <a
             href="https://iamaaviral.github.io/minesweeper/"
             className={styles.card}
