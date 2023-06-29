@@ -103,14 +103,14 @@ const Projects = () => {
             </p>
           </a>
           <a
-            href="https://play-my-music.vercel.app/"
+            href="https://songify-vert.vercel.app/"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h3 className={styles.projectName}>
                 <p className={styles.projectLink}>
-                  Play my music
+                  Songify
                 </p>
               </h3>
             <p>
