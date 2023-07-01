@@ -13,7 +13,7 @@ const Footer = () => {
                     <a href="mailto:srivastavaaviral1@gmail.com">srivastavaaviral1@gmail.com</a>
                     <br />
                     <FontAwesomeIcon icon={faPhone} className={styles.socialIcon} />
-                    <a>+91-7073865049</a>
+                    <p style={{display: "inline", marginLeft: "8px"}}>+91-7073865049</p>
                 </div>
                 <div className={styles.location}>
                 <FontAwesomeIcon icon={faMapPin}/>  <b>Bengaluru, India</b>

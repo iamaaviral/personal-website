@@ -1,0 +1,15 @@
+.calendlyButton {
+  margin-top: 16px;
+  background-color: #0a3477;
+  border: 0;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--foreground-rgb);
+}
+
+.calendlyButton:hover {
+  box-shadow: 0 0 0.5rem #ffffff70;
+}

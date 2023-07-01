@@ -187,6 +187,7 @@
 .hr {
   margin: 20px auto;
   border: 1px solid #d4d5d6;
+  opacity: 0.3;
 }
 
 .techStack {
@@ -294,7 +295,7 @@
 .card .projectLink {
   font-size: 35px;
   text-decoration: none;
-  color: #04b5ff;
+  color: var(--header-color);
   cursor: pointer;
   font-family: "Josefin Sans", sans-serif;
   opacity: 1;
@@ -366,6 +367,116 @@
   }
 }
 
+/* CSS FOR FITNESS PAGE */
+
+.fitnessHeading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 20vh);
+}
+
+.fitnessHeaderImgWrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  filter: blur(0px) grayscale(0%);
+  position: relative;
+  animation: fillColor 0.5s;
+  animation-timing-function: ease;
+  position: relative;
+  max-width: 700px;
+  max-height: 400px;
+  width: 700px;
+  height: 400px;
+}
+
+@keyframes fillColor {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+.bgFront {
+  position: absolute;
+  top: 79%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #fff -1.53%,
+    transparent -1.52%,
+    var(--header-color) 50%,
+    transparent
+  );
+  background-color: transparent;
+  height: 20px;
+  z-index: -1;
+}
+
+.fitnessHeaderImage {
+  filter: drop-shadow(0 8px 0.5rem #000);
+  object-fit: contain;
+}
+
+.fitnessHeaderDesc {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 16px;
+}
+
+.fitnessPhotosWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+}
+
+.fitnessPhotos {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  margin: 0.5rem;
+  /* filter: grayscale(100%); */
+  transition: transform 0.2s ease-in;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  /* aspect-ratio: 1; */
+}
+
+.fitnessPhotos:hover {
+  transform: scale(1.05);
+}
+
+.fitnessPhotoBlur {
+  background: radial-gradient(800px, hsla(0, 0%, 100%, 0.1), transparent 20%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fitnessPhotoBackground {
+  z-index: 0;
+  border-radius: 0.75rem;
+  filter: blur(24px);
+}
+
+.fitnessPhoto {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  z-index: 10;
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 900px) {
   .menu,
   .headerTools {
@@ -374,6 +485,9 @@
     width: max-content;
   }
 
+  .header {
+    padding: 0px;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -424,6 +538,9 @@
     font-size: 15px;
   }
 
+  .introParagraph {
+    padding-top: 8px;
+  }
   .techStack {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
