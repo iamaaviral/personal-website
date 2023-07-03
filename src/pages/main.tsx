@@ -23,8 +23,8 @@ const Main = () => {
                 src="/image.png"
                 priority={true}
                 alt="profile-image"
-                height={700}
-                width={500}
+                fill
+                sizes="100%"
               />
             </div>
 
@@ -61,9 +61,9 @@ const Main = () => {
                   globetrotter by nature. Eager to master the art of coding, defy physical limitations, and uncover the wonders of the globe.
                 </p>
                 <br />
-                <h4>
+                <h3>
                   Welcome to my portfolio. Feel free to browse my website, connect on any social media or directly book a 1 on 1. Thank you for visiting!
-                </h4>
+                </h3>
               </div>
             </div>
           </div>

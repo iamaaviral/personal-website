@@ -44,26 +44,21 @@ const Work = () => {
           <div className={styles.fitnessHeading}>
             <div className={styles1.workHeaderImgWrapper}>
               <div className={styles1.bgFront} />
-              <div className={styles1.workHeaderImgContainer}>
               <Image
-                src="/work/workHeader1.png"
+                src="/work/workHeader.png"
                 className={styles1.workHeaderImage}
                 alt="profile-image"
                 loading="eager"
                 priority
                 fill
-                sizes="50vw, 50vw" 
+                sizes="100%"
               />
-
-              </div>
-
             </div>
             <div className={styles1.techStack}>
                 <div className={styles1.iconBlock}>
                   <FontAwesomeIcon
                     icon={faHtml5}
                     className={`${styles1.skillIcon} ${styles1.html5}`}
-                    title="HTML5"
                   />
                 </div>
 
@@ -71,7 +66,6 @@ const Work = () => {
                   <FontAwesomeIcon
                     icon={faCss3}
                     className={`${styles1.skillIcon} ${styles1.css3}`}
-                    title="CSS3"
                   />
                 </div>
 
@@ -79,14 +73,12 @@ const Work = () => {
                   <FontAwesomeIcon
                     icon={faJs}
                     className={`${styles1.skillIcon} ${styles1.js}`}
-                    title="JAVASCRIPT"
                   />
                 </div>
                 <div className={styles1.iconBlock}>
                   <FontAwesomeIcon
                     icon={faReact}
                     className={`${styles1.skillIcon} ${styles1.react}`}
-                    title="REACT"
                   />
                 </div>
 
@@ -94,21 +86,18 @@ const Work = () => {
                   <FontAwesomeIcon
                     icon={faGitAlt}
                     className={`${styles1.skillIcon} ${styles1.git}`}
-                    title="GIT"
                   />
                 </div>
                 <div className={styles1.iconBlock}>
                   <FontAwesomeIcon
                     icon={faGithub}
                     className={`${styles1.skillIcon} ${styles1.gitHub}`}
-                    title="GITHUB"
                   />
                 </div>
                 <div className={styles1.iconBlock}>
                   <FontAwesomeIcon
                     icon={faSass}
                     className={`${styles1.skillIcon} ${styles1.sass}`}
-                    title="SASS"
                   />
                 </div>
 
@@ -116,7 +105,6 @@ const Work = () => {
                   <FontAwesomeIcon
                     icon={faBootstrap}
                     className={`${styles1.skillIcon} ${styles1.bootstrap}`}
-                    title="BOOTSTRAP"
                   />
                 </div>
               </div>
@@ -141,7 +129,7 @@ const Work = () => {
           <hr className={styles.hr} />
           <h2  className={styles1.sectionHeader}>
             Projects
-            <FontAwesomeIcon className={styles.projectIcons} icon={faOsi} />
+            <FontAwesomeIcon className={styles.projectIcons} icon={faOsi}/>
           </h2>
 
           <div className={styles.projectsWrapper}>
@@ -178,7 +166,7 @@ const Work = () => {
                 and outperform. Work involves requirements analysis, data
                 modelling, technology exploration and selection, software
                 design, construction, testing, and release.I worked mainly on
-                developing micro-frontends with React using Typescript for the
+                developing micro-frontend with React using Typescript for the
                 frontend.
               </div>
             </div>
@@ -205,7 +193,7 @@ const Work = () => {
           <hr className={styles.hr} />
           <h2  className={styles1.sectionHeader}>
           Innovative Explorations
-            <FontAwesomeIcon className={styles.projectIcons} icon={faLaptop} />
+            <FontAwesomeIcon className={styles.projectIcons} icon={faLaptop}/>
           </h2>
           <div className={styles.projectsGrid}>
             <a
