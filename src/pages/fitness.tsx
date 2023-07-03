@@ -46,13 +46,25 @@ const Fitness = () => {
               confidence, and unlock your full potential. Let&apos;s embark on
               this transformative journey towards a healthier, happier you.
             </p>
-            <p className={styles.fitnessHeaderDesc}>
-              Remember, the journey of a thousand miles begins with a single
-              step. Are you ready to take that step?
-              <br />
-              Book yourself a 1on1 call now for FREE!!
-            </p>
-            <CalendlyComponent />
+            <div className={styles.bookContainer}>
+              <h4 className={styles.bookText}>
+                Remember, the journey of a thousand miles begins with a single
+                step. Are you ready to take that step?
+                <br />
+                Book yourself a 1-1 call now for FREE!!
+              </h4>
+              <div className={styles.arrowBtnWrapper}>
+              <Image
+                src="/work/arrow.svg"
+                alt="SVG Image"
+                width={200}
+                height={200}
+                className={styles.arrowSvg}
+              />
+              <CalendlyComponent />
+              </div>
+
+            </div>
           </div>
           <hr className={styles.hr} />
           <h2 className={styles.sectionHeader}>
@@ -60,30 +72,30 @@ const Fitness = () => {
             <FontAwesomeIcon icon={faCamera} />
           </h2>
           <div className={styles.fitnessPhotosWrapper}>
-            {[1,2,3,4,5,6].map((e) => {
-                return (
-                    <div className={styles.fitnessPhotos} key={e}>
-                    <div className={styles.fitnessPhotoBlur} />
-                    <Image
-                      src={`/fitness/fitness${e}.png`}
-                      loading="lazy"
-                      decoding="async"
-                      alt="profile-image"
-                      fill
-                      sizes="100%"
-                      className={styles.fitnessPhotoBackground}
-                    />
-                    <Image
-                      src={`/fitness/fitness${e}.png`}
-                      loading="lazy"
-                      decoding="async"
-                      alt="profile-image"
-                      fill
-                      sizes="100%"
-                      className={styles.fitnessPhoto}
-                    />
-                  </div>
-                )
+            {[1, 2, 3, 4, 5, 6].map((e) => {
+              return (
+                <div className={styles.fitnessPhotos} key={e}>
+                  <div className={styles.fitnessPhotoBlur} />
+                  <Image
+                    src={`/fitness/fitness${e}.png`}
+                    loading="lazy"
+                    decoding="async"
+                    alt="profile-image"
+                    fill
+                    sizes="100%"
+                    className={styles.fitnessPhotoBackground}
+                  />
+                  <Image
+                    src={`/fitness/fitness${e}.png`}
+                    loading="lazy"
+                    decoding="async"
+                    alt="profile-image"
+                    fill
+                    sizes="100%"
+                    className={styles.fitnessPhoto}
+                  />
+                </div>
+              );
             })}
           </div>
         </div>

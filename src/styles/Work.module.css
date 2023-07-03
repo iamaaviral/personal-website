@@ -36,7 +36,7 @@
 }
 
 .workHeaderImage {
-  filter: drop-shadow(0 8px 0.5rem #000);
+  filter: drop-shadow(10px 15px 0.5rem #000);
   object-fit: contain;
 }
 
@@ -108,6 +108,7 @@
 }
 
 .downloadResumeBtn {
+  display: block;
   margin-top: 16px;
   background-color: #0a3477;
   border: 0;
@@ -135,13 +136,20 @@
   text-align: center;
   display: flex;
   align-items: center;
+  margin-top: 16px;
 }
+
+.arrowBtnWrapper {
+  position: relative;
+}
+
 .arrowSvg {
   position: absolute;
   height: 50px;
   width: 50px;
-  top: 50%;
-  left: 75% ;
+  margin: 12px;
+  left: 100% ;
+  top: 0%;
   transform: translateY(-30%) rotate(120deg);
 }
 

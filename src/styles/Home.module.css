@@ -94,6 +94,7 @@
 
 .fixedWrapper {
   width: 100%;
+  height: calc(100vh - 180px);
 }
 
 .clearfix::after {
@@ -183,9 +184,23 @@
   animation: showName 0.5s;
 }
 
-.introParagraph p {
+ .introHead {
   font-size: 20px;
-}
+  font-weight: 700;
+  margin: 8px 0;
+ }
+
+ .introDesc {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0;
+ }
+
+ .introFooter {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 8px 0;
+ }
 
 .coloredText {
   margin: 0 8px;
@@ -329,6 +344,7 @@
 /* CSS FOR FITNESS PAGE */
 
 .fitnessHeading {
+  padding: 8px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -375,7 +391,7 @@
 }
 
 .fitnessHeaderImage {
-  filter: drop-shadow(0 8px 0.5rem #000);
+  filter: drop-shadow(10px 15px 0.5rem #000);
   object-fit: contain;
 }
 
@@ -383,7 +399,6 @@
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-top: 16px;
 }
 
 .sectionHeader {
@@ -414,6 +429,32 @@
   /* aspect-ratio: 1; */
 }
 
+.bookContainer {
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.bookText {
+  line-height: 1.5rem;
+}
+
+.arrowBtnWrapper {
+  position: relative;
+}
+
+.arrowSvg {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin: 12px;
+  left: 100% ;
+  top: 0%;
+  transform: translateY(-30%) rotate(120deg);
+}
 .fitnessPhotos:hover {
   transform: scale(1.05);
 }
@@ -457,6 +498,10 @@
     width: 100%;
   }
 
+  .fixedWrapper {
+    width: 100%;
+    height: calc(100vh - 130px)
+  } 
   .triangle {
     display: none;
   }
@@ -502,7 +547,7 @@
   }
 
   .introParagraph {
-    padding-top: 8px;
+    padding: 8px;
   }
 
   .footerInfo {

@@ -52,16 +52,15 @@ const Main = () => {
           <div className={styles.introBlock}>
             <div className="container clearfix">
               <div className={styles.introParagraph}>
-                <p>
+                <p className={styles.introHead}>
                   Hi, I&apos;m <b>Aviral</b>, a self-motivated &#x201D;Tech driven wellness
                   nomad&#x201D;
                 </p>
-                <p>
+                <p  className={styles.introDesc}>
                   Master coder by day, fitness enthusiast by night, and
                   globetrotter by nature. Eager to master the art of coding, defy physical limitations, and uncover the wonders of the globe.
                 </p>
-                <br />
-                <h3>
+                <h3  className={styles.introFooter}>
                   Welcome to my portfolio. Feel free to browse my website, connect on any social media or directly book a 1 on 1. Thank you for visiting!
                 </h3>
               </div>

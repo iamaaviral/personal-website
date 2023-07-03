@@ -110,19 +110,20 @@ const Work = () => {
               </div>
             <p className={styles.fitnessHeaderDesc}>
               I am a front-end software developer with 5+ years of experience of building
-              web and mobile applications using a variety of tools and have
+              web and mobile applications using a variety of tools. I have an
               exposure to the entire gamut of software development lifecycle
               working on areas ranging all the way from data modelling to UI
               design and release management
             </p>
-            <br />
             <div className={styles1.resumeContainer}>
-            <h4>Looking for candidates for a rewarding career opportunity?</h4>
-            <Image src="/work/arrow.svg" alt="SVG Image" width={200} height={200} className={styles1.arrowSvg}/>
+            <h4>Are you a recruiter looking for candidates for a rewarding career opportunity?</h4>
+            <div className={styles1.arrowBtnWrapper}>
+              <Image src="/work/arrow.svg" alt="SVG Image" width={200} height={200} className={styles1.arrowSvg}/>
 
-              <a download href="/work/aviral-resume.pdf" className={styles1.downloadResumeBtn}>
-              Download Resume
-              </a>
+                <a download href="/work/aviral-resume.pdf" className={styles1.downloadResumeBtn}>
+                Download Resume
+                </a>
+            </div>
             </div>
 
           </div>
