@@ -1,8 +1,8 @@
 import React from "react";
 import Script from "next/script";
-
 import Head from "next/head";
-import styles from "./Calendly.module.css";
+
+import Button from "../button/Button";
 
 const CalendlyComponent = () => {
   const handleOpenPopup = () => {
@@ -19,9 +19,9 @@ const CalendlyComponent = () => {
         src="https://assets.calendly.com/assets/external/widget.js"
       />
 
-      <button onClick={handleOpenPopup} className={styles.calendlyButton}>
-        Schedule time with me
-      </button>
+      <Button onClick={handleOpenPopup}>
+        Schedule Now
+      </Button>
     </>
   );
 };

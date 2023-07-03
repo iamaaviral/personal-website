@@ -184,77 +184,33 @@
   font-size: 20px;
 }
 
+.coloredText {
+  margin: 0 8px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.coloredText svg {
+  margin-left: 8px;
+  color: white
+}
+.codeText {
+  background-image: linear-gradient(to right, #38bdf8 , #2563eb);
+}
+
+.dumbellText {
+  background-image: linear-gradient(to right, #c084fc , #db2777);
+}
+
+.travelText {
+  background-image: linear-gradient(to right, #84fcab , #2777db);
+}
+
 .hr {
   margin: 20px auto;
   border: 1px solid #d4d5d6;
   opacity: 0.3;
-}
-
-.techStack {
-  display: grid;
-  -ms-grid-columns: (minmax(130px, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  align-items: center;
-  grid-gap: 15px;
-  padding: 40px 50px;
-}
-
-.iconBlock {
-  display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 60px;
-  padding: 10px;
-  animation: showName 0.5s;
-}
-
-.skillIcon {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-.skillIcon:hover {
-  opacity: 0.8;
-}
-
-.html5 {
-  color: #dd4b2d;
-}
-.css3 {
-  color: #006cb4;
-}
-
-.js {
-  color: #efd82b;
-}
-
-.sass {
-  color: #cf649a;
-}
-
-.react {
-  color: #61dafb;
-}
-
-.gitHub {
-  color: #000;
-}
-
-.git {
-  color: #e84d32;
-}
-
-.bootstrap {
-  color: #543d7c;
 }
 
 /* Tablet and Smaller Desktop */
@@ -374,24 +330,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: calc(100vh - 20vh);
 }
 
 .fitnessHeaderImgWrapper {
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   filter: blur(0px) grayscale(0%);
-  position: relative;
   animation: fillColor 0.5s;
   animation-timing-function: ease;
   position: relative;
   max-width: 700px;
   max-height: 400px;
-  width: 700px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes fillColor {
@@ -405,7 +357,7 @@
 
 .bgFront {
   position: absolute;
-  top: 79%;
+  bottom: 15%;
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -431,11 +383,18 @@
   margin-top: 16px;
 }
 
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem
+}
+
 .fitnessPhotosWrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 .fitnessPhotos {
@@ -541,9 +500,6 @@
   .introParagraph {
     padding-top: 8px;
   }
-  .techStack {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
 
   .footerInfo {
     display: flex;
@@ -564,6 +520,10 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem 2.5rem;
+  }
+
+  .bgFront {
+    bottom: 15%
   }
 
   .hr {

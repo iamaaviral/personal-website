@@ -1,11 +1,14 @@
 import Head from "next/head";
+import { Inter } from "next/font/google";
+import Image from "next/image";
+
+import styles from "@/styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "./navbar";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Footer from "./footer";
-import Image from "next/image";
-import CalendlyComponent from "./components/Calendly";
+import CalendlyComponent from "./components/calendly/Calendly";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +55,10 @@ const Fitness = () => {
             <CalendlyComponent />
           </div>
           <hr className={styles.hr} />
+          <h2 className={styles.sectionHeader}>
+            Portfolio
+            <FontAwesomeIcon icon={faCamera} />
+          </h2>
           <div className={styles.fitnessPhotosWrapper}>
             {[1,2,3,4,5,6].map((e) => {
                 return (

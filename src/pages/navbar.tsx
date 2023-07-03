@@ -1,8 +1,7 @@
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faGithub,
@@ -10,6 +9,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import styles from "@/styles/Home.module.css";
 
 const Navbar = () => {
   const router = useRouter();
@@ -31,13 +31,13 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/projects"
+              href="/work"
               className={`${styles.routeLink} ${
-                router.pathname === "/projects" ? styles.active : ""
+                router.pathname === "/work" ? styles.active : ""
               }`}
               aria-label="Link to Projects page"
             >
-              Projects
+              Work
             </Link>
           </li>
           <li>
