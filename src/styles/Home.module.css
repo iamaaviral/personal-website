@@ -609,10 +609,6 @@
     height: calc(100vh - 130px);
   }
 
-  .fitnessHeaderImage {
-    object-fit: cover;
-  }
-
   .bgFront {
     bottom: 10%;
   }
