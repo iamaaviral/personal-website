@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import styles from "@/styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import { faCamera, faDotCircle } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "./navbar";
 import Footer from "./footer";
@@ -32,7 +32,6 @@ const Fitness = () => {
                 src="/fitness/fitnessHeader.png"
                 className={styles.fitnessHeaderImage}
                 alt="profile-image"
-                loading="eager"
                 priority
                 fill
                 sizes="100%"
@@ -42,28 +41,28 @@ const Fitness = () => {
             <p className={styles.fitnessHeaderDesc}>
               With years of experience in the realm of personal fitness,
               I&apos;m dedicated to helping individuals achieve their wellness
-              goals. Together, we&apos;ll sculpt your body, boost your
-              confidence, and unlock your full potential. Let&apos;s embark on
-              this transformative journey towards a healthier, happier you.
-            </p>
-            <div className={styles.bookContainer}>
-              <h4 className={styles.bookText}>
-                Remember, the journey of a thousand miles begins with a single
-                step. Are you ready to take that step?
-                <br />
-                Book yourself a 1-1 call now for FREE!!
-              </h4>
-              <div className={styles.arrowBtnWrapper}>
-              <Image
-                src="/work/arrow.svg"
-                alt="SVG Image"
-                width={200}
-                height={200}
-                className={styles.arrowSvg}
-              />
-              <CalendlyComponent />
+              goals. Let&apos;s embark on this transformative journey towards a
+              healthier, happier you. Schedule a one-on-one session with me and
+              receive expert fitness advice for <b>FREE!!</b>
+              <div className={styles.paraSeparator}>
+                <FontAwesomeIcon icon={faDotCircle} />
               </div>
-
+              If you&apos;re a brand looking to shine, let&apos;s collaborate
+              and elevate your brand to new heights. 🚀 I&apos;m open for
+              <b> photoshoots</b>. Whether it&apos;s a creative concept, a
+              stunning portrait, or a product showcase 📸✨ Get in touch now and
+              let&apos;s make magic happen! 🌟
+            </p>
+            <div className={styles.connectWrapper}>
+              <CalendlyComponent />
+              <a
+                href="https://ig.me/m/iamaaviral"
+                target="_blank"
+                className={styles.linkToBtn}
+                rel="noopener noreferrer"
+              >
+                Collaborate now
+              </a>
             </div>
           </div>
           <hr className={styles.hr} />
@@ -78,7 +77,6 @@ const Fitness = () => {
                   <div className={styles.fitnessPhotoBlur} />
                   <Image
                     src={`/fitness/fitness${e}.png`}
-                    loading="lazy"
                     decoding="async"
                     alt="profile-image"
                     fill
@@ -87,7 +85,6 @@ const Fitness = () => {
                   />
                   <Image
                     src={`/fitness/fitness${e}.png`}
-                    loading="lazy"
                     decoding="async"
                     alt="profile-image"
                     fill

@@ -225,18 +225,18 @@
   background-image: linear-gradient(to right, #84fcab , #2777db);
 }
 
+.paraSeparator {
+  font-size: 8px;
+  font-weight: 800;
+  color: #fff;
+  margin: 8px;
+}
+
 .hr {
   margin: 20px auto;
   border: 1px solid #d4d5d6;
   opacity: 0.3;
 }
-
-/* Tablet and Smaller Desktop */
-/* @media (min-width: 701px) and (max-width: 1120px) {
-  .projectsGrid {
-    grid-template-columns: repeat(2, 50%);
-  }
-} */
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
@@ -349,7 +349,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 16px;
   height: calc(100vh - 180px);
 }
 
@@ -429,13 +430,28 @@
   /* aspect-ratio: 1; */
 }
 
-.bookContainer {
+.connectWrapper {
   position: relative;
-  flex-direction: column;
-  text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 8px;
   margin-top: 16px;
+}
+
+.bookContainer, .collaborateContainer {
+  flex-basis: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.bookContainer {
+  border-right: 1px solid #d4d5d6
 }
 
 .bookText {
@@ -479,6 +495,24 @@
   border-radius: 0.75rem;
   z-index: 10;
   object-fit: cover;
+}
+
+
+.linkToBtn {
+  display: block;
+  margin-top: 16px;
+  background-color: #0a3477;
+  border: 0;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--foreground-rgb);
+}
+
+.linkToBtn:hover {
+  box-shadow: 0 0 0.5rem #ffffff70;
 }
 
 @media only screen and (max-width: 900px) {

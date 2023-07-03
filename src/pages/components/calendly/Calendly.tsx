@@ -21,7 +21,7 @@ const CalendlyComponent = () => {
       />
 
       <Button onClick={handleOpenPopup}>
-        Schedule Now
+        Book 1 on 1 Call
       </Button>
     </>
   );

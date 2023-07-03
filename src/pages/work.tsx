@@ -48,7 +48,6 @@ const Work = () => {
                 src="/work/workHeader.png"
                 className={styles1.workHeaderImage}
                 alt="profile-image"
-                loading="eager"
                 priority
                 fill
                 sizes="100%"
@@ -120,7 +119,7 @@ const Work = () => {
             <div className={styles1.arrowBtnWrapper}>
               <Image src="/work/arrow.svg" alt="SVG Image" width={200} height={200} className={styles1.arrowSvg}/>
 
-                <a download href="/work/aviral-resume.pdf" className={styles1.downloadResumeBtn}>
+                <a download href="/work/aviral-resume.pdf" className={styles.linkToBtn}>
                 Download Resume
                 </a>
             </div>
