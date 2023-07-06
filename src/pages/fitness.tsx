@@ -44,9 +44,11 @@ const Fitness = () => {
               goals. Let&apos;s embark on this transformative journey towards a
               healthier, happier you. Schedule a one-on-one session with me and
               receive expert fitness advice for <b>FREE!!</b>
+            </p>
               <div className={styles.paraSeparator}>
                 <FontAwesomeIcon icon={faDotCircle} />
               </div>
+              <p className={styles.fitnessHeaderDesc}>
               If you&apos;re a brand looking to shine, let&apos;s collaborate
               and elevate your brand to new heights. 🚀 I&apos;m open for
               <b> photoshoots</b>. Whether it&apos;s a creative concept, a
