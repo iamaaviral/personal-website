@@ -108,10 +108,10 @@
 }
 
 .sectionHeader {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.5rem
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 .resumeContainer {
   position: relative;
@@ -132,11 +132,10 @@
   height: 50px;
   width: 50px;
   margin: 12px;
-  left: 100% ;
+  left: 100%;
   top: 0%;
   transform: translateY(-30%) rotate(120deg);
 }
-
 
 @media only screen and (max-width: 900px) {
   .iconBlock {
