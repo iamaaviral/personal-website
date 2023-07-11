@@ -51,6 +51,17 @@ const Navbar = () => {
               Fitness
             </Link>
           </li>
+          {/* <li>
+            <Link
+              href="/travel"
+              className={`${styles.routeLink} ${
+                router.pathname === "/travel" ? styles.active : ""
+              }`}
+              aria-label="Link to Fitness page"
+            >
+              Travel
+            </Link>
+          </li> */}
         </ul>
         <div className={`${styles.headerTools} ${styles.pullRight}`}>
           <Link

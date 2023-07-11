@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faOsi } from "@fortawesome/free-brands-svg-icons";
 import {
+  faDownload,
   faLaptop,
   faMagicWandSparkles,
 } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +22,7 @@ import {
 import styles from "@/styles/Home.module.css";
 import styles1 from "@/styles/Work.module.css";
 
+import HeaderImage from '../../public/work/workHeader.png';
 import Navbar from "./navbar";
 import Footer from "./footer";
 
@@ -45,14 +47,15 @@ const Work = () => {
             <div className={styles1.workHeaderImgWrapper}>
               <div className={styles1.bgFront} />
               <Image
-                src="/work/workHeader.png"
+                src={HeaderImage}
                 className={styles1.workHeaderImage}
                 alt="profile-image"
                 priority
                 fill
-                sizes="100%"
+                sizes="50vh 50vw"
               />
             </div>
+            <div  className={styles.fitnessHeaderDescWrapper}>
             <div className={styles1.techStack}>
                 <div className={styles1.iconBlock}>
                   <FontAwesomeIcon
@@ -114,13 +117,14 @@ const Work = () => {
               working on areas ranging all the way from data modelling to UI
               design and release management
             </p>
+            </div>
             <div className={styles1.resumeContainer}>
             <h4>Are you a recruiter looking for candidates for a rewarding career opportunity?</h4>
             <div className={styles1.arrowBtnWrapper}>
               <Image src="/work/arrow.svg" alt="SVG Image" width={200} height={200} className={styles1.arrowSvg}/>
 
                 <a download href="/work/aviral-resume.pdf" className={styles.linkToBtn}>
-                Download Resume
+                <FontAwesomeIcon icon={faDownload}/> Download Resume
                 </a>
             </div>
             </div>

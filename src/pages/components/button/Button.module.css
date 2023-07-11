@@ -1,5 +1,8 @@
 .commonButton {
-    margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
     background-color: #0a3477;
     border: 0;
     padding: 12px;
@@ -7,6 +10,7 @@
     border-radius: 8px;
     font-weight: 700;
     font-size: 16px;
+    white-space: nowrap;
     color: var(--foreground-rgb);
   }
   

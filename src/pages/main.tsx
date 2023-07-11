@@ -24,6 +24,7 @@ const Main = () => {
                 priority={true}
                 alt="profile-image"
                 fill
+                className={styles.mainImage}
                 sizes="100%"
               />
             </div>

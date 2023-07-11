@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactHTMLElement } from "react";
 import Script from "next/script";
 import Head from "next/head";
 
 import Button from "../button/Button";
 
-const CalendlyComponent = () => {
+const CalendlyComponent = ({children}: {children: any}) => {
   const handleOpenPopup = () => {
     //@ts-ignore
     window.Calendly.initPopupWidget({
@@ -15,14 +15,14 @@ const CalendlyComponent = () => {
 
   return (
     <>
+      <Button onClick={handleOpenPopup}>
+        {children}
+      </Button>
       <Script
         strategy="lazyOnload"
         src="https://assets.calendly.com/assets/external/widget.js"
       />
-
-      <Button onClick={handleOpenPopup}>
-        Book 1 on 1 Call
-      </Button>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
     </>
   );
 };
