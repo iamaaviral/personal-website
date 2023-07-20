@@ -30,22 +30,6 @@
   width: 100%;
 }
 
-.bgFront {
-  position: absolute;
-  bottom: 30%;
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    #fff -1.53%,
-    transparent -1.52%,
-    var(--header-color) 50%,
-    transparent
-  );
-  height: 100px;
-  transform: rotate(-25deg);
-  z-index: -1;
-}
-
 @keyframes fillColor {
   from {
     filter: blur(5px);
@@ -174,8 +158,5 @@
 
   .travelHeading {
     height: calc(100vh - 130px);
-  }
-  .bgFront {
-    bottom: 10%;
   }
 }

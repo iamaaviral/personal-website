@@ -7,7 +7,7 @@
 
   --foreground-rgb: #e9e9e9;
   --header-color: #04b5ff;
-  --background-rgb: #02183b;
+  --background-rgb: #000010;
 
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
@@ -17,7 +17,7 @@
   :root {
     --foreground-rgb: #fff;
     --header-color: #04b5ff;
-    --background-rgb: #02183b;
+    --background-rgb: #000010;
     --background-end-rgb: 0, 0, 0;
 
     --card-rgb: 100, 100, 100;

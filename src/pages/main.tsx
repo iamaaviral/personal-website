@@ -10,6 +10,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "@/styles/Home.module.css";
 
+import HeaderImage from '../../public/image.png';
+
 const lato = Kanit({ weight: "600", subsets: ["latin"] });
 
 const Main = () => {
@@ -20,12 +22,12 @@ const Main = () => {
           <div className={styles.homepageTitle}>
             <div className={styles.profileImage}>
               <Image
-                src="/image.png"
+                src={HeaderImage}
                 priority={true}
                 alt="profile-image"
                 fill
                 className={styles.mainImage}
-                sizes="100%"
+                sizes="100vw 100vh"
               />
             </div>
 

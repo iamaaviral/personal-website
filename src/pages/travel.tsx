@@ -39,7 +39,6 @@ const Travel = () => {
         <div className={styles.container}>
           <div className={styles.travelHeading}>
             <div className={styles.travelHeaderImgWrapper}>
-              <div className={styles.bgFront} />
               <Image
                 src={HeaderImage}
                 className={styles.travelHeaderImage}

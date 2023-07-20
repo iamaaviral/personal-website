@@ -45,7 +45,6 @@ const Work = () => {
         <div className={styles.container}>
           <div className={styles.fitnessHeading}>
             <div className={styles1.workHeaderImgWrapper}>
-              <div className={styles1.bgFront} />
               <Image
                 src={HeaderImage}
                 className={styles1.workHeaderImage}

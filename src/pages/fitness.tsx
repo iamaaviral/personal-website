@@ -28,7 +28,6 @@ const Fitness = () => {
         <div className={styles.container}>
           <div className={styles.fitnessHeading}>
             <div className={styles.fitnessHeaderImgWrapper}>
-              <div className={styles.bgFront} />
               <Image
                 src={HeaderImage}
                 className={styles.fitnessHeaderImage}

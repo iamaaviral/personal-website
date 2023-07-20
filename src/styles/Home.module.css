@@ -153,6 +153,20 @@
   display: block;
   float: right;
   right: 0;
+  background: radial-gradient(
+    100% 100% at 50% 50%,
+    rgba(173, 84, 228, 0.29) 2.55%,
+    rgba(173, 84, 228, 0.29) 17.07%,
+    rgba(136, 66, 183, 0.29) 24.96%,
+    rgba(100, 49, 139, 0.29) 34%,
+    rgba(69, 34, 101, 0.241) 43.45%,
+    rgba(44, 21, 69, 0.128) 53.21%,
+    rgba(25, 12, 45, 0.058) 63.36%,
+    rgba(11, 5, 28, 0.02) 70.06%,
+    rgba(7, 3, 23, 0.034) 75.69%,
+    rgba(3, 1, 18, 0.017) 80.7%,
+    rgba(0, 0, 15, 0) 100%
+  );
 }
 
 .toLeft {
@@ -365,6 +379,20 @@
   max-width: 700px;
   width: 100%;
   flex-basis: 50%;
+  background: radial-gradient(
+    100% 100% at 50% 50%,
+    rgba(173, 84, 228, 0.29) 2.55%,
+    rgba(173, 84, 228, 0.29) 17.07%,
+    rgba(136, 66, 183, 0.29) 24.96%,
+    rgba(100, 49, 139, 0.29) 34%,
+    rgba(69, 34, 101, 0.241) 43.45%,
+    rgba(44, 21, 69, 0.128) 53.21%,
+    rgba(25, 12, 45, 0.058) 63.36%,
+    rgba(11, 5, 28, 0.02) 70.06%,
+    rgba(7, 3, 23, 0.034) 75.69%,
+    rgba(3, 1, 18, 0.017) 80.7%,
+    rgba(0, 0, 15, 0) 100%
+  );
 }
 
 @keyframes fillColor {
@@ -374,21 +402,6 @@
   to {
     filter: blur(0px);
   }
-}
-
-.bgFront {
-  position: absolute;
-  bottom: 15%;
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    #fff -1.53%,
-    transparent -1.52%,
-    var(--header-color) 50%,
-    transparent
-  );
-  height: 10px;
-  z-index: -1;
 }
 
 .fitnessHeaderImage {
@@ -611,10 +624,6 @@
 
   .fitnessHeading {
     height: calc(100vh - 130px);
-  }
-
-  .bgFront {
-    bottom: 10%;
   }
 
   .hr {
