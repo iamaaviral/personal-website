@@ -41,7 +41,7 @@ const Fitness = () => {
             <p className={styles.fitnessHeaderDesc}>
               With years of experience in the realm of personal fitness,
               I&apos;m dedicated to helping individuals achieve their wellness
-              goals. Let&apos;s embark on this transformative journey towards a
+              goals. Let&apos;s  embark on this transformative journey towards a
               healthier, happier you. Schedule a one-on-one session with me and
               receive expert fitness advice for <b>FREE!!</b>
             </p>
