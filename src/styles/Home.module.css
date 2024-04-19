@@ -110,15 +110,20 @@
 
 .profileImage {
   position: absolute;
-  top: -20px;
-  right: -40%;
+  top: 0;
+  right: -30%;
   z-index: 400;
-  width: 500px;
-  height: 700px;
+  overflow: hidden; /* Ensure that the drop shadow doesn't overflow */
+  border-radius: 50%; /* Make the container a circle */
 }
 
 .mainImage {
-  filter: drop-shadow(-10px -5px 1.5rem #000);
+  max-width: 100%;
+  filter: drop-shadow(
+    -10px -5px 1.5rem rgba(0, 0, 0, 0.7)
+  ); /* Adjusted drop shadow */
+  width: 100%; /* Ensure the image fits within the circle */
+  height: auto; /* Ensure aspect ratio is maintained */
 }
 
 .profileName {
@@ -130,6 +135,7 @@
 
 .profileName span {
   display: block;
+  /* font-size: 8rem; */
   color: rgba(252, 252, 252, 0.4);
 }
 
@@ -189,14 +195,15 @@
 }
 
 .introBlock {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   background: transparent;
   position: relative;
   z-index: 700;
 }
 .introParagraph {
   text-align: center;
-  padding: 50px 50px 30px 50px;
+  padding: 50px 30px 50px 30px;
   animation: showName 0.5s;
 }
 
@@ -573,7 +580,7 @@
     left: 0;
     top: 0;
     margin: auto;
-    background-image: url(/image.png);
+    background-image: url(/main_image.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;

@@ -10,7 +10,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "@/styles/Home.module.css";
 
-import HeaderImage from '../../public/image.png';
+import HeaderImage from '../../public/main_image.png';
 
 const lato = Kanit({ weight: "600", subsets: ["latin"] });
 
@@ -19,15 +19,17 @@ const Main = () => {
     <div className={styles.clearfix}>
       <section className={`${styles.fixedWrapper} ${styles.clearfix}`}>
         <div className={`${styles.container} ${styles.clearfix}`}>
-          <div className={styles.homepageTitle}>
+        <div className={`${styles.triangle} ${styles.toLeft}`}></div>
+          <div className={`${styles.triangle} ${styles.toRight}`}></div>
+          <div className={`${styles.homepageTitle} ${styles.clearfix}`}>
             <div className={styles.profileImage}>
               <Image
                 src={HeaderImage}
                 priority={true}
                 alt="profile-image"
-                fill
+                width={500}
+                height={500}
                 className={styles.mainImage}
-                sizes="100vw 100vh"
               />
             </div>
 
@@ -50,8 +52,7 @@ const Main = () => {
               </span>
             </h2>
           </div>
-          <div className={`${styles.triangle} ${styles.toLeft}`}></div>
-          <div className={`${styles.triangle} ${styles.toRight}`}></div>
+
           <div className={styles.introBlock}>
             <div className="container clearfix">
               <div className={styles.introParagraph}>
