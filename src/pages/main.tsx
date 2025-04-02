@@ -10,7 +10,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "@/styles/Home.module.css";
 
-import HeaderImage from '../../public/main_image.png';
+import HeaderImage from '../../public/main_ghibli_image.png';
 
 const lato = Kanit({ weight: "600", subsets: ["latin"] });
 
@@ -27,8 +27,7 @@ const Main = () => {
                 src={HeaderImage}
                 priority={true}
                 alt="profile-image"
-                width={500}
-                height={500}
+         
                 className={styles.mainImage}
               />
             </div>

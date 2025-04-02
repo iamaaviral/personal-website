@@ -111,19 +111,17 @@
 .profileImage {
   position: absolute;
   top: 0;
-  right: -30%;
+  right: -20%;
   z-index: 400;
   overflow: hidden; /* Ensure that the drop shadow doesn't overflow */
-  border-radius: 50%; /* Make the container a circle */
+  border-radius: 10%; /* Make the container a circle */
 }
 
 .mainImage {
   max-width: 100%;
-  filter: drop-shadow(
-    -10px -5px 1.5rem rgba(0, 0, 0, 0.7)
-  ); /* Adjusted drop shadow */
-  width: 100%; /* Ensure the image fits within the circle */
+  width: auto; /* Ensure the image fits within the circle */
   height: auto; /* Ensure aspect ratio is maintained */
+  /* transition: transform 0.3s ease; */
 }
 
 .profileName {
@@ -578,9 +576,9 @@
     border-radius: 50%;
     clear: both;
     left: 0;
-    top: 0;
+    top: 150%;
     margin: auto;
-    background-image: url(/main_image.png);
+    background-image: url(/main_ghibli_image.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
