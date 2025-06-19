@@ -110,7 +110,7 @@ const Work = () => {
                 </div>
               </div>
             <p className={styles.fitnessHeaderDesc}>
-              I am a front-end software developer with 5+ years of experience of building
+              I am a front-end software developer with more than 6 years of experience of building
               web and mobile applications using a variety of tools. I have an
               exposure to the entire gamut of software development lifecycle
               working on areas ranging all the way from data modelling to UI
